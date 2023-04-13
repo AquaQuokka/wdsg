@@ -2,22 +2,22 @@
 # WDSG: The Web Development Style Guide
 
 #### 1
-1. Use lowercase letters for all HTML tags and attributes, except for special cases where uppercase letters are required (e.g. DOCTYPE).
+Use lowercase letters for all HTML tags and attributes, except for special cases where uppercase letters are required (e.g. DOCTYPE).
 
 #### 2
-2. Use double quotes (`"`) for all HTML attribute values.
+Use double quotes (`"`) for all HTML attribute values.
 
 #### 3
-3. Indent all child elements with 4 spaces or 1 tab character, but do not use these interchangably.
+Indent all child elements with 4 spaces or 1 tab character, but do not use these interchangably.
 
 #### 4
-4. Group tags of the same name, and tags of similar names, unless they function differently, or if one contains text and the other does not contain text.
+Group tags of the same name, and tags of similar names, unless they function differently, or if one contains text and the other does not contain text.
 
 #### 5
-5. Indent each child codeblock with a single line on the top and bottom before adding child elements.
+Indent each child codeblock with a single line on the top and bottom before adding child elements.
 
 #### 6
-6. If a tag contains text that is not an attribute that spans over multiple lines, then it must be indented with a single line on the top and bottom, and must be indented with 4 spaces or 1 tab inwards. However, if it contains text that is not an attribute but spans over only one line, then it must stay on the same line as the tags that surround it, and must be indented with 1 space on each side of the text, between the text and the tags that surround it.
+If a tag contains text that is not an attribute that spans over multiple lines, then it must be indented with a single line on the top and bottom, and must be indented with 4 spaces or 1 tab inwards. However, if it contains text that is not an attribute but spans over only one line, then it must stay on the same line as the tags that surround it, and must be indented with 1 space on each side of the text, between the text and the tags that surround it.
 
 E.g.
 
@@ -64,25 +64,25 @@ E.g.
 
 
 #### 7
-7. Use semantic HTML where possible. For example, use `<nav>` instead of `<div class="nav">` or `<article>` instead of `<div class="article">`.
+Use semantic HTML where possible. For example, use `<nav>` instead of `<div class="nav">` or `<article>` instead of `<div class="article">`.
 
 #### 8
-8. Use descriptive but concise names for your classes and IDs. Avoid using single letters or abbreviations that may not be obvious to others.
+Use descriptive but concise names for your classes and IDs. Avoid using single letters or abbreviations that may not be obvious to others.
 
 #### 9
-9. Include `alt` attributes for all `<img>` tags, and provide meaningful descriptions of the image, so that your page is accessible to everyone.
+Include `alt` attributes for all `<img>` tags, and provide meaningful descriptions of the image, so that your page is accessible to everyone.
 
 #### 10
-10. Use the `type` attribute for all `<script>`, `<style>`, and `<link>` tags.
+Use the `type` attribute for all `<script>`, `<style>`, and `<link>` tags.
 
 #### 11
-11. Use `utf-8` encoding, as this is the standard HTML encoding across the web.
+Use `utf-8` encoding, as this is the standard HTML encoding across the web.
 
 #### 12
-12. Avoid using `while` loops in your JavaScript, as this can cause browser performance issues or hanging.
+Avoid using `while` loops in your JavaScript, as this can cause browser performance issues or hanging.
 
 #### 13
-13. Avoid using inline styles and scripts, as this makes your website harder to debug and read.Instead, use a separate `.css` file containing your styles, and use a `<link>` tag in your `<head>`. For scripts, use a separate `.js` file containing your JavaScript scripts, and use a `<script>` tag in your head or after the rest of your page, but before the `</html>` tag.
+Avoid using inline styles and scripts, as this makes your website harder to debug and read.Instead, use a separate `.css` file containing your styles, and use a `<link>` tag in your `<head>`. For scripts, use a separate `.js` file containing your JavaScript scripts, and use a `<script>` tag in your head or after the rest of your page, but before the `</html>` tag.
 
 E.g.
 
@@ -181,7 +181,7 @@ Correct:
         
         <button onclick="buttonClick()"> Click me! </button>
 
-        <script type="text/javascript" src="core.js"></script>
+        <script type="text/javascript" src="index.js"></script>
 
     </body>
 
@@ -198,7 +198,7 @@ Correct:
 ```
 
 
-`core.js`:
+`index.js`:
 
 ```js
 function buttonClick() {
@@ -207,34 +207,34 @@ function buttonClick() {
 ```
 
 #### 14
-14. Your primary `.html` file should always be called `index.html`. This is because when a browser navigates to a webpage, it will always display the content from the `index.html` file.
+Your primary `.html` file should always be called `index.html`. This is because when a browser navigates to a webpage, it will always display the content from the `index.html` file.
 
 #### 15
-15. Use a separate `.css` file for each `.html` file in your website. This is because this allows each `.html` file to have different styles.
+Use a separate `.css` file for each `.html` file in your website. This is because this allows each `.html` file to have different styles.
 
 #### 16
-16. Your `.css` file should always have the same name as the file that it provides styles for, but with a `.css` extension instead of a `.html` extension. This is because it makes it easier to tell which styles are for which page.
+Your `.css` file should always have the same name as the file that it provides styles for, but with a `.css` extension instead of a `.html` extension. This is because it makes it easier to tell which styles are for which page.
 
 #### 17
-17. Don't call your `.js` file `script.js`. This is because it doesn't describe what the script does. If you use the same script across mutliple pages, call it `core.js` instead. If you have different scripts for different pages, give it the same name as the page that it provides scripting for, but with a `.js` extension instead of a `.html` extension.
+Don't call your `.js` file `script.js`. This is because it doesn't describe what the script does. If you use the same script across mutliple pages, call it `core.js` instead. If you have different scripts for different pages, give it the same name as the page that it provides scripting for, but with a `.js` extension instead of a `.html` extension.
 
 #### 18
-18. If you use multiple JavaScript files for the same page, or multiple pages with multiple scripts, then make sure that each script has a descriptive and concise name. This makes it clear what each script does.
+If you use multiple JavaScript files for the same page, or multiple pages with multiple scripts, then make sure that each script has a descriptive and concise name. This makes it clear what each script does.
 
 #### 19
-19. Use the correct HTML element/tag for the content that is being served. For example, use `<h1>` for top-level headings, and use `<p>` for paragraphs.
+Use the correct HTML element/tag for the content that is being served. For example, use `<h1>` for top-level headings, and use `<p>` for paragraphs.
 
 #### 20
-20. Use the `title` attribute to provide additional information about an element, such as a tooltip or a longer description. However, note that this is visible to everyone who uses the page. This is not to be confused with the `<title>` element/tag.
+Use the `title` attribute to provide additional information about an element, such as a tooltip or a longer description. However, note that this is visible to everyone who uses the page. This is not to be confused with the `<title>` element/tag.
 
 #### 21
-21. Use classes and IDs for their specific use-cases. Only use classes for elements that require the same styling or scripting, since classes can be used on more than one element. Only use IDs for a single element.
+Use classes and IDs for their specific use-cases. Only use classes for elements that require the same styling or scripting, since classes can be used on more than one element. Only use IDs for a single element.
 
 #### 22
-22. Avoid using deprecated HTML elements and attributes where possible. Use CSS instead of `<center>` where possible. Only use non-semantic HTML elements where the CSS/JS alternative is much harder to implement. E.g. `<marquee>` is acceptable, but is not recommended to use in most cases.
+Avoid using deprecated HTML elements and attributes where possible. Use CSS instead of `<center>` where possible. Only use non-semantic HTML elements where the CSS/JS alternative is much harder to implement. E.g. `<marquee>` is acceptable, but is not recommended to use in most cases.
 
 #### 23
-23. Specify a language for your HTML pages. This can be achieved by using the `lang` attribute of the `<html>` tag.
+Specify a language for your HTML pages. This can be achieved by using the `lang` attribute of the `<html>` tag.
 
 E.g.
 
@@ -248,19 +248,137 @@ E.g.
 ```
 
 #### 24
-24. Use shorthand properties where possible to reduce the amount of code that you need to write. For example, use `padding: 10px 20px 10px 20px` instead of `padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px;`.
+Use shorthand properties where possible to reduce the amount of code that you need to write. For example, use `padding: 10px 20px 10px 20px` instead of `padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px;`.
 
 #### 25
-25. Use relative units such as `em` and `rem` instead of `px` or `pt` where possible. This will make your page more responsive to changes in screen size and font size.
+Use relative units such as `em` and `rem` instead of `px` or `pt` where possible. This will make your page more responsive to changes in screen size and font size.
 
 #### 26
-26. Use CSS preprocessors such as SCSS or LESS to make your CSS code more modular and easier to maintain.
+Use CSS preprocessors such as SCSS or LESS to make your CSS code more modular and easier to maintain.
 
 #### 27
-27. Add comments to your HTML, CSS and JavaScript code. This makes it easier to understand how your code works.
+Add comments to your HTML, CSS and JavaScript code. This makes it easier to understand how your code works.
 
 #### 28
-28. Avoid using `!important` in your CSS code, as it can make your code harder to maintain and override.
+Avoid using `!important` in your CSS code, as it can make your code harder to maintain and override.
+
+#### 29
+Don't use overly vibrant colors in your CSS code, as it can make your page ugly and hard to read, which overall degrades the user experience.
+
+#### 30
+Add scripts into the `<head>` instead of after all other HTML elements where possible, as it is a more organized way to import scripts. However, this is not possible with all scripts, so make sure that your scripts are being imported properly.
+
+#### 31
+Don't use variables to define functions, except for cases where it is required, for example the `window.onload` event function.
+
+E.g.
+
+Wrong:
+
+```js
+alertBox = function() {
+    alert("Hello, world!");
+};
+```
+
+Correct:
+
+```js
+function alertBox() {
+    alert("Hello, world!");
+};
+```
+
+
+#### 32
+Don't use unnamed functions in your JavaScript code, as it makes your code harder to read.
+
+Wrong:
+
+```js
+window.onload = () => {
+    alert("Hello, world!");
+};
+```
+
+Correct:
+
+```js
+window.onload = function() {
+    alert("Hello, world!");
+};
+```
+
+
+#### 33
+Don't assign styles to elements, except for cases where it is required. Instead, assign styles to specific classes or IDs, as they are separate from root elements.
+
+#### 34
+Do not assign IDs or classes to the `<head>` or `<body>` elements/tags, as they are very important tags. Instead, create a separate `<span>`, `<p>`, or `<div>` element/tag with an ID/class.
+
+E.g.
+
+Wrong:
+
+`index.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+    <body>
+
+        Hello, world!
+
+    </body>
+
+</html>
+```
+
+
+`index.css`:
+
+```css
+body {
+    background-color: red;
+}
+```
+
+Correct:
+
+`index.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+    <body>
+
+        <div id="red-body">
+
+            Hello, world!
+
+        </div>
+    
+    </body>
+
+</html>
+```
+
+
+`index.css`:
+
+```css
+#red-body {
+    color: red;
+}
+```
+
+
+#### 35
+Do not use words that are keywords in HTML, CSS, or JavaScript as IDs or class names. This can make your code harder to read and build upon.
+
+
 
 Well done! You've reached the end of the guidelines! These guidelines will expand, so make sure to check back regularly.
 
