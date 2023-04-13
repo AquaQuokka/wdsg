@@ -1,5 +1,5 @@
 
-# Hypertext Markup Guide
+# WDSG: The Web Development Style Guide
 
 1. Use lowercase letters for all HTML tags and attributes, except for special cases where uppercase letters are required (e.g. DOCTYPE).
 
