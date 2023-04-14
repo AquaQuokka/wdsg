@@ -378,6 +378,37 @@ Correct:
 #### 35
 Do not use words that are keywords in HTML, CSS, or JavaScript as IDs or class names. This can make your code harder to read and build upon.
 
+#### 36
+Link internal functions where possible. This allows better understanding of what each function does. This also allows you to call functions that are used internally.
+
+E.g.
+
+```js
+function showMessage() {
+    alert("Hello, world!");
+};
+
+window.onload = showMessage;
+```
+
+However, it is worth noting that there are some cases where using an unnamed function is appropriate, such as with immediately-invoked function expressions (IIFE). In these cases, using a named function would not make sense, as the function is only intended to be used once and immediately discarded.
+
+
+#### 37
+Always validate user input to avoid security vulnerabilities and errors in your code.
+Without proper validation, user input can lead to security vulnerabilities, such as SQL injection, cross-site scripting (XSS), and command injection.
+
+#### 38
+Never validate user input on the client-side. Use a server-side approach for secure authentication.
+Client-side validation means that user credentials, such as passwords and/or tokens, are validated in the user's web browser. This approach is insecure because it exposes the authentication logic and secrets to the client-side, making you and your client vulnerable to attacks such as code injection.
+
+#### 39
+Implement rate limiting to prevent brute-force attacks on login pages and other sensitive areas of your website/app.
+
+#### 40
+Encrypt sensitive data, such as credit card information and personal identification numbers (PINs), both in transit and at rest.
+
+
 
 
 Well done! You've reached the end of the guidelines! These guidelines will expand, so make sure to check back regularly.
